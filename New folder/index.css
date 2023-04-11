@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+  position: relative;
+  max-width: 80%;
+  width: 100%;
+  background-color: rgb(139, 109, 109);
+  border-radius: 10px;
+ box-shadow: 10px 10px 10px rgb(160, 91, 91);
+ margin: 20% auto 0;
+ padding: 30px;
+}
+.container .input{
+    position: relative;
+height: 100%;
+width: 100%;
+}
+ .container .input textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: larger;
+    border-radius: 10px;
+    padding: 5px 0px 0px 10px;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: capitalize;
+   resize: none;
+}
+ #icon{
+    position: absolute;
+    top: 50%;
+    right: 14px;
+   font-size: 30px;
+   transform: translateY(-50%);
+   pointer-events: none;
+   color:rgb(130, 109, 109) ;
+}
+.input textarea:focus{
+    border-color: black;
+}
+textarea::-webkit-scrollbar{
+    display: none;
+}
+.input textarea:focus ~ #icon{
+    border-color: black;
+}
+ .todolist .list{
+    /* overflow-y: auto; */
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: rgb(139, 109, 109);
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* margin-top: 6px; */
+    font-weight: bold;
+    text-transform: capitalize;
+    /* cursor: pointer; */
+}
+.todolist .list input{
+    height: 16px;
+    width: 16px;
+    accent-color: black;
+    pointer-events: none;
+}
+.todolist .list .task{
+    margin: 0 30px 0 15px;
+    word-break: break-all;
+}
+.list input:checked~.task{
+    text-decoration: line-through;
+}
+.todolist .list #trash{
+    position: absolute;
+   top: -70%;
+   right: 5px;
+   transform: translateY(20px);
+   font-size: 27px;
+   color: black; 
+   padding: 10px 5px 10px 0;
+   display: none;
+}
+.todolist .list i:hover{
+   display: inline-flex;
+}
+ .todolist .task{
+    margin: 0 30px 0 15px;
+}
+.container .pending-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pending-task span {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+ .clear-btn{
+padding: 6px 12px;
+outline: none;
+border-radius: 7px;
+background-color: rgb(93, 9, 250);
+color: rgb(253, 252, 252);
+cursor: pointer;
+border: none;
+font-size: large;
+font-weight: bold;
+margin-left: 40px;
+}
